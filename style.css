@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+  font-family: cursive;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: linear-gradient(#f8fcff, #e6f2f7);
+  overflow-y: auto;
+}
+
+
+.page {
+  display: none;
+  height: 100vh;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.page.active {
+  display: block;
+}
+
+.gift {
+  width: 140px;
+  margin-top: 60px;
+}
+
+.tap {
+  background: white;
+  color: red;
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  50% { transform: translateY(-6px); }
+}
+
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+}
+
+.image {
+  width: 150px;
+}
+
+button {
+  padding: 12px 30px;
+  border-radius: 30px;
+  border: none;
+  background: #1aa7ec;
+  color: white;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.flip-card {
+  background: #ffdede;
+  padding: 30px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.book {
+  width: 150px;
+  margin-top: 40px;
+}
+
+#message {
+  display: none;
+  max-width: 700px;
+  margin: 30px auto;
+  line-height: 1.6;
+}
+
+
+footer {
+  position: fixed;
+  bottom: 10px;
+  right: 15px;
+  color: #999;
+}

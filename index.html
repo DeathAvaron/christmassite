@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Christmas Surprise ðŸŽ„</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="snow"></div>
+
+<section class="page active" id="page1">
+  <h1>For someone special</h1>
+  <div class="gift-container" onclick="goToPage(2)">
+    <img src="gift.png" class="gift">
+    <div class="tap">Tap me!</div>
+  </div>
+</section>
+
+<section class="page" id="page2">
+  <div class="card">
+    <img src="snowman.png" class="image">
+    <h2>This Christmas,<br>something special for you</h2>
+    <button onclick="goToPage(3)">Open it</button>
+  </div>
+</section>
+
+<section class="page" id="page3">
+  <h2>Just for you</h2>
+  <p>I don't need a gift, because...</p>
+
+  <div class="cards">
+    <div class="flip-card" onclick="flip(this,'You')"></div>
+    <div class="flip-card" onclick="flip(this,'are')"></div>
+    <div class="flip-card" onclick="flip(this,'my')"></div>
+    <div class="flip-card" onclick="flip(this,'cutest')"></div>
+    <div class="flip-card" onclick="flip(this,'gift ðŸŽ')"></div>
+  </div>
+</section>
+
+<section class="page" id="page4">
+  <img src="book.png" class="book" onclick="openMessage()">
+  <p class="tap">Tap to open</p>
+
+<div id="message">
+  <h2>Merry Christmas </h2>
+  <p>
+    This little message is just a reminder of how much you matter.<br><br>
+
+    Sometimes life gets loud, days get heavy, and we forget how special we really are.<br><br>
+
+    You bring light in ways you may not even notice — through your kindness, your presence,
+    your words, and even your silence. The world feels a little warmer because you exist in it.<br><br>
+
+    Thank you for being genuine.<br>
+    Thank you for being strong on days when it’s hard.<br>
+    Thank you for being you, exactly as you are.<br><br>
+
+    I hope this Christmas wraps you in peace, fills your heart with hope,
+    and reminds you that you are appreciated more than you know.<br><br>
+
+    Never forget — you are valued, you are loved, and you make a difference. 
+  </p>
+</div>
+
+</section>
+
+<footer>@aerisneel</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
